@@ -1,0 +1,100 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, form, input, button {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+   
+   body {
+     font-family: Arial, sans-serif;
+     line-height: 1.6;
+   }
+   
+   header {
+     background: #333;
+     color: #fff;
+     padding: 1rem;
+   }
+   
+   header h1 {
+     margin-bottom: 0.5rem;
+   }
+   
+   nav ul {
+     display: flex;
+     list-style: none;
+   }
+   
+   nav ul li {
+     margin-right: 1rem;
+   }
+   
+   nav ul li a {
+     color: #fff;
+     text-decoration: none;
+   }
+   
+   main {
+     padding: 1rem;
+   }
+   
+   section {
+     margin-bottom: 2rem;
+   }
+   
+   form {
+     display: flex;
+     flex-direction: column;
+   }
+   
+   form label {
+     margin-bottom: 0.5rem;
+   }
+   
+   form input {
+     margin-bottom: 1rem;
+     padding: 0.5rem;
+   }
+   
+   button {
+     padding: 0.5rem;
+     background: #333;
+     color: #fff;
+     border: none;
+     cursor: pointer;
+   }
+   
+   button:hover {
+     background: #555;
+   }
+   
+   footer {
+     background: #333;
+     color: #fff;
+     text-align: center;
+     padding: 1rem;
+     position: fixed;
+     width: 100%;
+     bottom: 0;
+   }
+   
+   /* Flexbox for navigation */
+   nav ul {
+     display: flex;
+     justify-content: space-around;
+   }
+   
+   /* Grid layout for main content */
+   main {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 1rem;
+   }
+   
+   /* Responsive design */
+   @media (min-width: 768px) {
+     main {
+       grid-template-columns: 1fr 1fr;
+     }
+   }
+   
